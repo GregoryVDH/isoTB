@@ -1,0 +1,7 @@
+^.*\.Rproj$
+^\.Rproj\.user$
+^dvpt$
+^.lintr.R$
+^LICENSE\.md$
+^.\.man\.AAA_model.Rd$
+^README\.Rmd$
