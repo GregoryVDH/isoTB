@@ -1,51 +1,39 @@
 
-<!-- README.md is generated from README.Rmd. Please edit that file -->
+# isoTB: Stable Isotope Geochemistry Tool Box
 
-# isoTB
+## Overview
 
-<!-- badges: start -->
+The isoTB package provides multiple tools to help process empirical or
+model stable isotope geochemistry data for environmental science
+studies. The isoTB package provides simple conversion functions to
+convert between different isotopic composition notations (*e.g.* isotope
+ratio, delta notation, fractional abundance), isotope mixing models,
+isotope mixing model solvers and functions to calculate the isotope
+fractionation of sources.
 
-<!-- badges: end -->
+The isoTB package also provides very useful functions for enriched
+isotope tracer studies enabling (i) to calculate the error induced by
+neglecting isotope fractionation processes in tracing studies and (ii)
+to calculate the minimum isotope enrichment of the tracer source in a
+system to ensure that the aforementioned error is below a user-defined
+threshold.
 
-The goal of isoTB is to …
+isoTB can be used to model complex systems for both natural variations
+of isotope ratios and enriched isotope tracer studies by creating the
+different reservoirs in the system and defining the interactions
+(isotope mixing, isotope fractionation) between the different
+reservoirs.
 
 ## Installation
 
-You can install the development version of isoTB like so:
+You can install the development version of isoTB from GitHub like so:
 
 ``` r
-# FILL THIS IN! HOW CAN PEOPLE INSTALL YOUR DEV PACKAGE?
+# Using the pak package to install directly from GitHub
+# install.packages("pak")
+pak::pak("gregoryVDH/isoTB") 
+
+# Using the devtools package to install directly from GitHub
+# install.packages("devtools")
+devtools::install_github("gregoryVDH/isoTB") 
 ```
-
-## Example
-
-This is a basic example which shows you how to solve a common problem:
-
-``` r
-library(isoTB)
-## basic example code
-```
-
-What is special about using `README.Rmd` instead of just `README.md`?
-You can include R chunks like so:
-
-``` r
-summary(cars)
-#>      speed           dist       
-#>  Min.   : 4.0   Min.   :  2.00  
-#>  1st Qu.:12.0   1st Qu.: 26.00  
-#>  Median :15.0   Median : 36.00  
-#>  Mean   :15.4   Mean   : 42.98  
-#>  3rd Qu.:19.0   3rd Qu.: 56.00  
-#>  Max.   :25.0   Max.   :120.00
-```
-
-You’ll still need to render `README.Rmd` regularly, to keep `README.md`
-up-to-date. `devtools::build_readme()` is handy for this.
-
-You can also embed plots, for example:
-
-<img src="man/figures/README-pressure-1.png" width="100%" />
-
-In that case, don’t forget to commit and push the resulting figure
-files, so they display on GitHub and CRAN.
